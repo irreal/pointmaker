@@ -12,7 +12,7 @@ export const load = async function ({ fetch, params }) {
 	return {
 		point: {
 			promise: point,
-			hostname: env.VERCEL_URL
+			hostname: env.HOST_URL
 		}
 	};
 } satisfies PageServerLoad;
