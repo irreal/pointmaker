@@ -1,13 +1,12 @@
-import { head_selector } from 'svelte/internal';
 import type { Actions } from './$types';
-import { generate } from 'short-uuid';
+import shortuid from 'short-uuid';
 import { error, redirect } from '@sveltejs/kit';
 
 export const actions = {
 	default: async ({ request, fetch }) => {
 		const data = await request.formData();
 		const point = data.get('point');
-		const id = generate();
+		const id = shortuid.generate();
 		const time = new Date().toISOString();
 
 		const response = await fetch(`https://kvdb.io/XwuAz5MyhpVjWQeHLV1oPi/${id}`, {
