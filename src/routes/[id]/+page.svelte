@@ -26,10 +26,10 @@
 			</div>
 			<button
 				class="bg-gray-100 rounded-md p-2 cursor-pointer"
-				on:click={() => copyToClipboard(`https://pointmaker.vercel.app/${$page.params.id}`)}
+				on:click={() => copyToClipboard(`https://${data.point.hostname}/${$page.params.id}`)}
 			>
 				<span class="text-gray-600 font-mono break-all"
-					>{`https://pointmaker.vercel.app/${$page.params.id}`}</span
+					>{`https://${data.point.hostname}/${$page.params.id}`}</span
 				>
 				<span class="text-gray-400 text-sm ml-2">(click to copy)</span>
 			</button>
