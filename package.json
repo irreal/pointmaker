@@ -35,5 +35,10 @@
 		"vite": "^4.2.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"ofetch": "^1.0.1",
+		"short-uuid": "^4.2.2",
+		"svelte-french-toast": "^1.0.4-beta.0"
+	}
 }
